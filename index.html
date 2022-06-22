@@ -5,10 +5,18 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <title>kick-ass githbub learning project</title>
+    <title>git and github in a nutshell</title>
 </head>
 <body>
     <div id="container">
+        <section id="logos">
+            <img src="git-logo.png" alt="GIT logo">
+            <h1>
+                git and github<br>
+                in a nutshell
+            </h1>
+            <img src="github-logo.png" alt="GitHub logo">
+        </section>
         <section id="funnyWords">
             <h1>Funny words</h1>
             <h2>Repo</h2>
@@ -62,8 +70,20 @@
                     <td>add file to staging area</td>
                 </tr>
                 <tr>
+                    <td class="code">git add .</td>
+                    <td>add all files in dir to staging area</td>
+                </tr>
+                <tr>
                     <td class="code">git commit -m &lt;message&gt;</td>
                     <td>commit all files from staging area, with message</td>
+                </tr>
+                <tr>
+                    <td class="code">git log</td>
+                    <td>shows history of commits with all info about authors etc</td>
+                </tr>
+                <tr>
+                    <td class="code">git log --oneline</td>
+                    <td>history in one line, just ID and message</td>
                 </tr>
             </table>
         </section>

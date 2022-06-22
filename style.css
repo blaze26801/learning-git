@@ -25,6 +25,29 @@ table tr:first-child{
     margin-right: auto;
 }
 
+#logos{
+    display: flex;
+    justify-content: space-between;
+}
+
+#logos img{
+    height: 150px;
+}
+
+#logos h1{
+    font-size: 46px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Consolas;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
 .code{
     font-family: Consolas;
 }
@@ -33,3 +56,4 @@ section h1:first-child{
     border-top: 2px solid black;
     text-align: center;
 }
+
