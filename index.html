@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -10,67 +10,83 @@
 <body>
     <div id="container">
         <section id="logos">
-            <img src="git-logo.png" alt="GIT logo">
+            <img src="img/git-logo.png" alt="GIT logo">
             <h1>
                 git and github<br>
                 in a nutshell
             </h1>
-            <img src="github-logo.png" alt="GitHub logo">
+            <img src="img/github-logo.png" alt="GitHub logo">
         </section>
         <section id="funnyWords">
             <h1>Funny words</h1>
-            <h2>Repo</h2>
-            <p>
-                Generally whole project. Different projects = different repos.<br>
-                If configured correctly, there will be <b>.git</b> file in root folder of the project.<br>
-            </p>
-            <h2>Commits</h2>
-            <p>
-                Commits are "save points" of the project, for example: after adding a feature, fixing a bug, or making it a feature <s>(obviously)</s>.
-                <h3>Commits have 3 "stages":</h3>
-                <ol>
-                    <li>
-                        <h4>Modified</h4>
-                        <p>
-                        Changed the file; Not commited.
-                        </p>
-                    </li>
-                    <li>
-                        <h4>Staging</h4>
-                        <p>
-                        Add all changed files that You want to commit.
-                        </p>
-                    </li>
-                    <li>
-                        <h4>Commited</h4>
-                        <p>
-                        Files from staging area are added to the commit.
-                        </p>
-                    </li>
-                </ol>
-                <h3>There are 3 ways to undo commits:</h3>
-                <ol>
-                    <li>
-                        <h4 id="green">Checkout commit</h4>
-                        <p>
-                            Just to see previous version. It is completely safe, doesn't save any potentian changes to the commits.
-                        </p>
-                    </li>
-                    <li>
-                        <h4 id="orange">Revert commit</h4>
-                        <p>
-                            Lets you undo previous commit, basically delete it. Could cause some bugs.
-                        </p>
-                    </li>
-                    <li>
-                        <h4 id="red">Reset commit</h4>
-                        <p>
-                            Permanently takes You back to previous commit. Very dangerous.
-                        </p>
-                    </li>
-                </ol>
-            </p>
+            <div class="funnyWord">
+                <h2>Repo</h2>
+                <p>
+                    Generally whole project. Different projects = different repos.<br>
+                    If configured correctly, there will be <b>.git</b> file in root folder of the project.<br>
+                </p>
+            </div>
+            <div class="funnyWord">
+                <h2>Commits</h2>
+                <p>
+                    Commits are "save points" of the project, for example: after adding a feature, fixing a bug, or making it a feature <s>(obviously)</s>.
+                    <h3>Commits have 3 "stages":</h3>
+                    <ol>
+                        <li>
+                            <h4>Modified</h4>
+                            <p>
+                            Changed the file; Not commited.
+                            </p>
+                        </li>
+                        <li>
+                            <h4>Staging</h4>
+                            <p>
+                            Add all changed files that You want to commit.
+                            </p>
+                        </li>
+                        <li>
+                            <h4>Commited</h4>
+                            <p>
+                            Files from staging area are added to the commit.
+                            </p>
+                        </li>
+                    </ol>
+                    <h3>There are 3 ways to undo commits:</h3>
+                    <ol>
+                        <li>
+                            <h4 id="green">Checkout commit</h4>
+                            <p>
+                                Just to see previous version. It is completely safe, doesn't save any potentian changes to the commits.
+                            </p>
+                        </li>
+                        <li>
+                            <h4 id="orange">Revert commit</h4>
+                            <p>
+                                Lets you undo previous commit, basically delete it. Could cause some bugs.
+                            </p>
+                        </li>
+                        <li>
+                            <h4 id="red">Reset commit</h4>
+                            <p>
+                                Permanently takes You back to previous commit. Very dangerous.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </div>
+            <div class="funnyWord">
+                <h2>Branch</h2>
+                <p>
+                    Isolated enviroment,to work on certain "line" (part) of code. For example, to develop new features before joining them to master branch.<br>
+                    <b>Master branch</b> represents main, stable version of the code.<br>
+                    <img style="width: 50%; margin: 10px;" src="img/branches.png" alt="Visualisation of branches">
+                </p>
+
+            </div>
         </section>
+
+
+
         <section>
             <table>
                 <tr>
@@ -100,7 +116,10 @@
                 </tr>
                 <tr>
                     <td class="code">git log</td>
-                    <td>shows history of commits with all info about authors etc</td>
+                    <td>
+                        shows history of commits with all info about authors etc <br>
+                        press q to leave
+                    </td>
                 </tr>
                 <tr>
                     <td class="code">git log --oneline</td>
@@ -111,10 +130,49 @@
                     <td>Commit checkout. See one of previous commits.</td>
                 </tr>
                 <tr>
+                    <td class="code">git checkout &lt;branchName&gt;</td>
+                    <td>
+                        Go back to latest commit in the branch.<br>
+                        Default branch is Master branch.
+                    </td>
+                </tr>
+                <tr>
                     <td class="code">git revert &lt;commit_ID&gt;</td>
                     <td>
                         Revert commit (undo some feature from previous commit).<br>
                         If you're stuck, press "." and then type "wq".
+                    </td>
+                </tr>
+                <tr>
+                    <td class="code">git reset &lt;commit_ID&gt;</td>
+                    <td>
+                        Reset to previous commit. Permanently go back.<br>
+                        Use <span class="code">--hard</span> flag to force delete all files.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="code">git branch &lt;branch_name&gt;</td>
+                    <td>
+                        Create new branch
+                    </td>
+                </tr>
+                <tr>
+                    <td class="code">git branch -a</td>
+                    <td>
+                        See list of all branches
+                    </td>
+                </tr>
+                <tr>
+                    <td class="code">git checkout &lt;branch_name&gt;</td>
+                    <td>
+                        Switch the branch You're working on.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="code">git branch -d &lt;branch_name&gt;</td>
+                    <td>
+                        Delete branch. Only works if we merged the branch already.<br>
+                        To delete without merging use: <span class="code">git branch -D &lt;branch_name&gt;</span>.
                     </td>
                 </tr>
             </table>
