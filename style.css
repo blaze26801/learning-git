@@ -61,6 +61,9 @@ table tr:first-child{
 
 
 
+.code{
+    font-family: Consolas;
+}
 
 .funnyWord{
     padding: 20px;
@@ -70,8 +73,8 @@ table tr:first-child{
     background: #ddd;
 }
 
-.code{
-    font-family: Consolas;
+.tableSectionStart{
+    border-top: 8px solid black;
 }
 
 section h1:first-child{

@@ -104,14 +104,22 @@
                 <tr>
                     <td class="code">git init</td>
                     <td>create a repo in current dir</td>
+
+                    <td rowspan="2">
+                        B A S I C
+                    </td>
                 </tr>
                 <tr>
                     <td class="code">git status</td>
                     <td>the list of files currently in "changed" and "staging" status</td>
                 </tr>
-                <tr>
+
+                <tr class="tableSectionStart">
                     <td class="code">git add &lt;filename&gt;</td>
                     <td>add file to staging area</td>
+                    <td rowspan="5">
+                        C O M M I T S
+                    </td>
                 </tr>
                 <tr>
                     <td class="code">git add .</td>
@@ -132,9 +140,15 @@
                     <td class="code">git log --oneline</td>
                     <td>history in one line, just ID and message</td>
                 </tr>
-                <tr>
+
+                <tr class="tableSectionStart">
                     <td class="code">git checkout &lt;commit_ID&gt;</td>
                     <td>Commit checkout. See one of previous commits.</td>
+                    <td rowspan="4">
+                        C H E C K O U T <br>
+                        R E V E R T <br>
+                        R E S E T
+                    </td>
                 </tr>
                 <tr>
                     <td class="code">git checkout &lt;branchName&gt;</td>
@@ -157,10 +171,14 @@
                         Use <span class="code">--hard</span> flag to force delete all files.
                     </td>
                 </tr>
-                <tr>
+
+                <tr class="tableSectionStart">
                     <td class="code">git branch &lt;branch_name&gt;</td>
                     <td>
                         Create new branch
+                    </td>
+                    <td rowspan="5">
+                        B R A N C H E S <br>
                     </td>
                 </tr>
                 <tr>
@@ -188,6 +206,7 @@
                         Merge branch (into the branch You're currently on)
                     </td>
                 </tr>
+
             </table>
         </section>
     </div>
