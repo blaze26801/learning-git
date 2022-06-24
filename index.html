@@ -81,7 +81,14 @@
                     <b>Master branch</b> represents main, stable version of the code.<br>
                     <img style="width: 50%; margin: 10px;" src="img/branches.png" alt="Visualisation of branches">
                 </p>
+                <h3>Merging branches</h3>
+                <p>
+                    <ol>
+                        <li>Checkout to Master branch, or the main branch you want to merge into</li>
+                        <li><span class="code">git merge &lt;branch_name&gt;</span></li>
 
+                    </ol>
+                </p>
             </div>
         </section>
 
@@ -173,6 +180,12 @@
                     <td>
                         Delete branch. Only works if we merged the branch already.<br>
                         To delete without merging use: <span class="code">git branch -D &lt;branch_name&gt;</span>.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="code">git merge &lt;branch_name&gt;</td>
+                    <td>
+                        Merge branch (into the branch You're currently on)
                     </td>
                 </tr>
             </table>
