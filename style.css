@@ -14,6 +14,7 @@ li p{
 
 table{
     border-collapse: collapse;
+    font-size: 1vw;
 }
 td{
     border: 2px solid black;
@@ -33,7 +34,7 @@ table tr:first-child{
 
 #logos{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 #logos img{
